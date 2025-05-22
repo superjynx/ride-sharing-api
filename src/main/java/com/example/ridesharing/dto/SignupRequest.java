@@ -3,8 +3,6 @@ package com.example.ridesharing.dto;
 import lombok.Data;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.Pattern;
 
 @Data
 public class SignupRequest {
@@ -18,9 +16,4 @@ public class SignupRequest {
 
     @NotBlank(message = "Role is required")
     private String role;  // ROLE_STUDENT or ROLE_DRIVER
-
-    @NotBlank(message = "Email is required")
-    @Email(message = "Invalid email format")
-    private String email;
-
 }

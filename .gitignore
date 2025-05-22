@@ -35,3 +35,9 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Application Specific ###
+application-dev.properties
+application-prod.properties
+*.log
+mongodb-data/

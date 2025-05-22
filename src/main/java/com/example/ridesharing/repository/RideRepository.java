@@ -12,5 +12,4 @@ import java.util.List;
 public interface RideRepository extends MongoRepository<Ride, String>, RideRepositoryCustom {
     List<Ride> findByDriverUsername(String driverUsername);
     Page<Ride> findByDriverUsername(String driverUsername, Pageable pageable);
-    long countByDriverUsername(String driverUsername);
 }
