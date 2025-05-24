@@ -7,6 +7,9 @@ WORKDIR /app
 # Copy everything from your project into the container
 COPY . .
 
+# Make gradlew executable
+RUN chmod +x gradlew
+
 # Build the Spring Boot app
 RUN ./gradlew build --no-daemon
 
